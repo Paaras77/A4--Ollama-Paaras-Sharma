@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ollama Simple Client-Paaras Sharma</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="https://www.drupal.org/files/project-images/ollama-logo.png" width="50" />
+    </header>
+    <main>
+        <form id="promptForm">
+            <select id="model">
+
+            </select>
+            <input type="text" id="prompt" placeholder="Ask any Question" required/>
+            <div>
+                <button type="submit">submit</button>
+            </div>
+        </form>
+        <p id="answer"></p>
+    </main>
+    <footer>
+        <p id="error"></p>
+    </footer>
+</body>
+</html>
