@@ -17,12 +17,16 @@
             <select id="model">
 
             </select>
-            <input type="text" id="prompt" placeholder="Ask any Question" required/>
+            <input type="text" id="prompt" placeholder="Ask any Question" required/>
             <div>
-                <button type="submit">submit</button>
+                <button type="submit">Submit</button>
             </div>
         </form>
-        <p id="answer"></p>
+        <section aria-labelledby="historyHeading">
+            <h2 id="historyHeading">Conversation history</h2>
+            <div id="history" aria-live="polite"></div>
+            <button id="clearConversation" type="button" class="secondary">Clear Conversation</button>
+        </section>
     </main>
     <footer>
         <p id="error"></p>
